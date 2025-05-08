@@ -4,15 +4,7 @@ from datetime               import datetime
 
 def criar_usuario(nome, email, telefone, idade, cep, pais, genero, ativo=True):
     u = Usuario(
-        nome=nome,
-        email=email,
-        telefone=telefone,
-        idade=idade,
-        cep=cep,
-        pais=pais,
-        genero=genero,
-        ativo= ativo,
-        created_at=datetime.now()
+
     )
     
     db.session.add(u)
